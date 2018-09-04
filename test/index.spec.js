@@ -6,13 +6,21 @@ describe('index', () =>{
   describe('#cardValidator', () =>{
 
     // testes
+    // describe('When there is no parameter', () =>{
+    //   it('should return error', () =>{
+    //     expect(() =>{
+    //       index.cardValidator('');
+    //     }).to.throw('Parameter not defined');
+    //   });
+    // });
+
     describe('When there is no parameter', () =>{
       it('should return error', () =>{
-        expect(() =>{
-          index.cardValidator();
-        }).to.throw(Error);
-      });
+        var badFn = function () {index.cardValidator('')};
+        expect(badFn).to.throw('Parameter not defined');
     });
+  });
+
 
     describe('When the number is a string', () =>{
       it('should return error', () =>{
@@ -24,11 +32,10 @@ describe('index', () =>{
 
     describe('When there is only one digit', () =>{
       it('should return error', () =>{
-        expect(() =>{
-          index.cardValidator('1')
-        }).to.throw(Error);
-      });
+        var badFn = function () {index.cardValidator(1)};
+        expect(badFn).to.throw('Card number must contain 14 to 16 numbers');
     });
+  });
 
     describe('When there is too much digit', () =>{
       it('should return error', () =>{
