@@ -20,24 +20,24 @@ A biblioteca valida o número do cartão de crédito (usando algoritmo de Luhn) 
 - [] README.md com
       - [x] descrição do módulo
       - [] instruções de instalação
-      - [] instruções de uso
-      - [] documentação da API.
-- [] index.js:
+      - [x] instruções de uso
+      - [x] documentação da API.
+- [x] index.js:
       - [x] Biblioteca deve exportar uma função ou objeto no escopo global (window) e
       - [x] fazer uso de features de ES6 onde for apropriado.
-- [] package.json com
-      - [] nome,
-      - [] versão,
-      - [] descrição,
-      - [] autores,
-      - [] licença,
-      - [] dependências,
-      - [] scripts (pretest, test, ...)
+- [x] package.json com
+      - [x] nome,
+      - [x] versão,
+      - [x] descrição,
+      - [x] autores,
+      - [x] licença,
+      - [x] dependências,
+      - [x] scripts (pretest, test, ...)
 - [] .eslintrc
       com configuração para linter (ver guia de estilo de JavaScript)
-- [] test/index.spec.js: com as rotinas de teste escritas para esta biblioteca. Os testes devem ser implementado
+- [x] test/index.spec.js: com as rotinas de teste escritas para esta biblioteca. Os testes devem ser implementado
       - [x] com Mocha
-      - [] e NYC (ver vídeo tutorial do Daniel :D)
+      - [x] e NYC (ver vídeo tutorial do Daniel :D)
 - [x] .gitignore
       para ignorar node_modules ou outras pastas que não devem ser incluídas no controle de versões (git).
 teste

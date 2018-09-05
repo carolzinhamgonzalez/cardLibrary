@@ -27,7 +27,7 @@ describe('index', () =>{
           expect(badFn).to.throw('Card number insufficient');
       });
     });
-    
+
     describe('When there is too much digit', () =>{
       it('should return error', () =>{
         expect(() =>{

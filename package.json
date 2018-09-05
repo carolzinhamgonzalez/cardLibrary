@@ -1,0 +1,25 @@
+{
+  "name": "carolzinhamgonzalez-cardvalidator",
+  "version": "1.0.0",
+  "description": "A biblioteca valida o número do cartão de crédito (usando algoritmo de Luhn) e retorna true ou false de acordo com o caso.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "cardValidator(card)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carolzinhamgonzalez/cardLibrary.git"
+  },
+  "keywords": [
+    "card"
+  ],
+  "author": "Carolina Gonzalez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carolzinhamgonzalez/cardLibrary/issues"
+  },
+  "homepage": "https://github.com/carolzinhamgonzalez/cardLibrary#readme"
+}
