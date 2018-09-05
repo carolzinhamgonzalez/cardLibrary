@@ -5,22 +5,12 @@ const index = require('../index');
 describe('index', () =>{
   describe('#cardValidator', () =>{
 
-    // testes
-    // describe('When there is no parameter', () =>{
-    //   it('should return error', () =>{
-    //     expect(() =>{
-    //       index.cardValidator('');
-    //     }).to.throw('Parameter not defined');
-    //   });
-    // });
-
     describe('When there is no parameter', () =>{
       it('should return error', () =>{
         var badFn = function () {index.cardValidator('')};
         expect(badFn).to.throw('Parameter not defined');
     });
   });
-
 
     describe('When the number is a string', () =>{
       it('should return error', () =>{
@@ -32,11 +22,12 @@ describe('index', () =>{
 
     describe('When there is only one digit', () =>{
       it('should return error', () =>{
-        var badFn = function () {index.cardValidator(1)};
-        expect(badFn).to.throw('Card number must contain 14 to 16 numbers');
+        expect(() =>{
+          var badFn = function () {index.cardValidator(true)};
+          expect(badFn).to.throw('Card number insufficient');
+      });
     });
-  });
-
+    
     describe('When there is too much digit', () =>{
       it('should return error', () =>{
         expect(() =>{
@@ -53,27 +44,6 @@ describe('index', () =>{
         expect(index.cardValidator(36490102462661)).equal(true);
       });
     });
-
-    // describe('When there are characters other than numbers', function(){
-    //   it('should return error', function(){
-    //     expect(index.cardValidator('545719029396-1234')
-    //     ).to.throw(Error);
-    //   });
-    // });
-
+    });
   });
 });
-
-
-
-//
-// Quando o numero for um inteiro e houver um digito deve lançar um erro.
-
-// describe('#cardValidator', function () {
-//        // Quando nao houver parametro deve lancar um erro.
-//        describe('Quando não houver parametro.', function () {
-//            it('Deve lancar um erro.', function () {
-//                var badFn = function () { card.cardValidator(); };
-//                expect(badFn).to.throw(Error);
-//            });
-//        });
