@@ -1,18 +1,17 @@
-const mocha = require('mocha');
 const expect = require('chai').expect;
 const index = require('../index');
 
 describe('index', () =>{
   describe('#cardValidator', () =>{
 
-    describe('When there is no parameter', () =>{
+    context('When there is no parameter', () =>{
       it('should return error', () =>{
         var badFn = function () {index.cardValidator('')};
         expect(badFn).to.throw('Parameter not defined');
+      });
     });
-  });
 
-    describe('When the number is a string', () =>{
+    context('When the number is a string', () =>{
       it('should return error', () =>{
         expect(() =>{
           index.cardValidator().typeof('string');
@@ -20,7 +19,7 @@ describe('index', () =>{
       });
     });
 
-    describe('When there is only one digit', () =>{
+    context('When there is only one digit', () =>{
       it('should return error', () =>{
         expect(() =>{
           var badFn = function () {index.cardValidator(true)};
@@ -28,7 +27,7 @@ describe('index', () =>{
       });
     });
 
-    describe('When there is too much digit', () =>{
+    context('When there is too much digit', () =>{
       it('should return error', () =>{
         expect(() =>{
           index.cardValidator('012345678910111213141')
@@ -36,7 +35,7 @@ describe('index', () =>{
       });
     });
 
-    describe("Validate card", () =>{
+    context("Validate card", () =>{
       it("should return false", () =>{
         expect(index.cardValidator(568)).equal(false);
       });

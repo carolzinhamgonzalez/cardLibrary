@@ -8,7 +8,7 @@ A biblioteca valida o número do cartão de crédito (usando algoritmo de Luhn) 
 
 #### Instalação
 - É necessário ter o node + npm instalados. Para guia de instalação, visite o [site oficial](https://nodejs.org/en/download/).
-- A seguir, instale $npm install ******
+- A seguir, instale $npm install cmg-card-validator
 
 ##### Versão 1.0.0
 1. Testes: A biblioteca será testada através da função cardValidator()
@@ -19,7 +19,7 @@ A biblioteca valida o número do cartão de crédito (usando algoritmo de Luhn) 
 
 2. README.md com
       - [x] descrição do módulo
-      - [] instruções de instalação
+      - [x] instruções de instalação
       - [x] instruções de uso
       - [x] documentação da API.
 3. index.js:
@@ -40,4 +40,4 @@ A biblioteca valida o número do cartão de crédito (usando algoritmo de Luhn) 
       - [x] para ignorar node_modules ou outras pastas que não devem ser incluídas no controle de versões (git).
 teste
 7. .eslintrc
-    - [] com configuração para linter (ver guia de estilo de JavaScript)
+    - [x] com configuração para linter (ver guia de estilo de JavaScript)
